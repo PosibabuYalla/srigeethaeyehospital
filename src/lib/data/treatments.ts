@@ -1,0 +1,232 @@
+export type Treatment = {
+  slug: string;
+  name: string;
+  shortDescription: string;
+  icon: string;
+  featured?: boolean;
+  category: "Retina" | "Cataract & Refractive" | "General" | "Specialty";
+  symptoms: string[];
+  diagnosis: string[];
+  treatment: string[];
+  recovery: string;
+  successRate: string;
+  doctors: string[];
+  equipment: string[];
+  faqs: { q: string; a: string }[];
+};
+
+export const treatments: Treatment[] = [
+  {
+    slug: "vitreo-retinal-surgery",
+    name: "Vitreo Retinal Surgery",
+    shortDescription: "Advanced micro-incision surgery for complex retinal conditions, performed with imported vitrectomy systems.",
+    icon: "eye",
+    featured: true,
+    category: "Retina",
+    symptoms: ["Sudden flashes of light", "Floaters or dark spots", "Curtain-like shadow in vision", "Sudden vision loss"],
+    diagnosis: ["OCT (Optical Coherence Tomography)", "B-Scan Ultrasound", "Fundus Photography", "Fluorescein Angiography"],
+    treatment: [
+      "Micro-incision vitrectomy using the Alcon Constellation system",
+      "Gas or silicone oil tamponade for retinal reattachment",
+      "Combined phaco-vitrectomy for complex cases",
+      "Post-operative laser retinopexy",
+    ],
+    recovery: "Most patients resume light activity within a week, with full visual recovery over 4-8 weeks depending on severity.",
+    successRate: "96%",
+    doctors: ["dr-p-mohan-krishna"],
+    equipment: ["alcon-constellation-vitrectomy", "zeiss-lumera-microscope", "zeiss-cirrus-oct"],
+    faqs: [
+      { q: "Is vitreo retinal surgery painful?", a: "The procedure is performed under local or topical anesthesia and is virtually painless. Mild discomfort may occur post-surgery, managed with medication." },
+      { q: "How long does the surgery take?", a: "Most vitreo retinal surgeries take 45 minutes to 2 hours depending on complexity." },
+    ],
+  },
+  {
+    slug: "cataract-surgery",
+    name: "Cataract Surgery",
+    shortDescription: "Bladeless micro-incision phacoemulsification with premium imported IOLs for rapid visual recovery.",
+    icon: "sparkles",
+    featured: true,
+    category: "Cataract & Refractive",
+    symptoms: ["Cloudy or blurry vision", "Faded colors", "Glare from lights", "Frequent prescription changes"],
+    diagnosis: ["Slit Lamp Examination", "IOL Master Biometry", "Corneal Topography"],
+    treatment: [
+      "Micro-incision Phacoemulsification (Signature WhiteStar system)",
+      "Premium Trifocal / Toric / Monofocal IOL implantation",
+      "Femto-assisted cataract surgery for select cases",
+    ],
+    recovery: "Vision improves within 24-48 hours; most patients return to normal activity within 3-5 days.",
+    successRate: "99%",
+    doctors: ["dr-b-prathyusha", "dr-p-narasimha-rao"],
+    equipment: ["amo-signature-whitestar", "zeiss-iolmaster-700", "centurion-silver-system"],
+    faqs: [
+      { q: "Is cataract surgery safe?", a: "Yes, it is one of the safest and most commonly performed surgeries worldwide, with a success rate above 99% at our centre." },
+      { q: "Which IOL should I choose?", a: "Our surgeons assess your lifestyle and eye measurements to recommend Monofocal, Toric, or Trifocal premium lenses." },
+    ],
+  },
+  {
+    slug: "lasik-surgery",
+    name: "LASIK Surgery",
+    shortDescription: "Blade-free vision correction to permanently reduce dependency on glasses and contact lenses.",
+    icon: "scan-eye",
+    category: "Cataract & Refractive",
+    symptoms: ["Myopia (Near-sightedness)", "Hyperopia (Far-sightedness)", "Astigmatism"],
+    diagnosis: ["Corneal Topography (Sirius)", "Pachymetry", "Detailed Refraction"],
+    treatment: ["Blade-free LASIK", "Personalized corneal mapping", "Rapid-recovery laser vision correction"],
+    recovery: "Most patients notice sharp vision within 24 hours and resume work in 2-3 days.",
+    successRate: "98%",
+    doctors: ["dr-b-prathyusha"],
+    equipment: ["sirius-corneal-topography"],
+    faqs: [
+      { q: "Am I a candidate for LASIK?", a: "Candidacy depends on corneal thickness, refractive stability, and eye health, assessed through a detailed screening." },
+    ],
+  },
+  {
+    slug: "diabetic-eye-disease",
+    name: "Diabetic Eye Disease",
+    shortDescription: "Comprehensive screening, laser, and surgical management of diabetic retinopathy.",
+    icon: "activity",
+    featured: true,
+    category: "Retina",
+    symptoms: ["Blurred or fluctuating vision", "Dark spots or floaters", "Difficulty seeing at night"],
+    diagnosis: ["OCT Angiography", "Fundus Fluorescein Angiography", "Dilated Retinal Examination"],
+    treatment: ["Pan-retinal photocoagulation laser", "Intravitreal Anti-VEGF injections", "Vitrectomy for advanced cases"],
+    recovery: "Laser sessions are outpatient procedures with same-day recovery; injection therapy is repeated in cycles as advised.",
+    successRate: "94%",
+    doctors: ["dr-p-mohan-krishna"],
+    equipment: ["appasamy-green-laser", "zeiss-cirrus-oct"],
+    faqs: [
+      { q: "How often should diabetics get an eye check?", a: "Every diabetic patient should have a dilated retinal examination at least once a year, or more frequently if retinopathy is detected." },
+    ],
+  },
+  {
+    slug: "glaucoma",
+    name: "Glaucoma",
+    shortDescription: "Early detection and advanced management to preserve optic nerve health and prevent vision loss.",
+    icon: "gauge",
+    category: "General",
+    symptoms: ["Gradual peripheral vision loss", "Eye pain or pressure", "Halos around lights"],
+    diagnosis: ["Humphrey Visual Field Analyzer", "Tonometry", "OCT Optic Nerve Analysis"],
+    treatment: ["Pressure-lowering medication", "Laser trabeculoplasty / iridotomy", "Glaucoma filtering surgery"],
+    recovery: "Most glaucoma treatments are managed on an outpatient basis with regular monitoring.",
+    successRate: "95%",
+    doctors: ["dr-p-narasimha-rao"],
+    equipment: ["zeiss-humphrey-field-analyzer"],
+    faqs: [
+      { q: "Can glaucoma be cured?", a: "Glaucoma cannot be reversed, but early detection and treatment can effectively halt its progression and preserve vision." },
+    ],
+  },
+  {
+    slug: "macular-degeneration",
+    name: "Macular Degeneration",
+    shortDescription: "Advanced diagnosis and Anti-VEGF injection therapy for age-related macular degeneration.",
+    icon: "target",
+    category: "Retina",
+    symptoms: ["Distorted or wavy central vision", "Blurred central vision", "Difficulty recognizing faces"],
+    diagnosis: ["OCT Macular Scan", "Fundus Photography", "Amsler Grid Testing"],
+    treatment: ["Intravitreal Anti-VEGF injections", "Nutritional supplementation", "Low-vision rehabilitation"],
+    recovery: "Injection therapy is delivered in outpatient cycles with vision stabilization monitored via OCT.",
+    successRate: "92%",
+    doctors: ["dr-p-mohan-krishna"],
+    equipment: ["zeiss-cirrus-oct"],
+    faqs: [],
+  },
+  {
+    slug: "retinal-detachment",
+    name: "Retinal Detachment",
+    shortDescription: "Emergency-ready surgical repair to restore and preserve vision from retinal detachment.",
+    icon: "zap",
+    featured: true,
+    category: "Retina",
+    symptoms: ["Sudden flashes of light", "Curtain-like shadow", "Sudden increase in floaters"],
+    diagnosis: ["B-Scan Ultrasound", "Indirect Ophthalmoscopy", "OCT"],
+    treatment: ["Scleral buckling", "Pneumatic retinopexy", "Vitrectomy with gas/oil tamponade"],
+    recovery: "Emergency surgery within 24-48 hours of detachment gives the best outcomes; recovery spans 4-6 weeks.",
+    successRate: "93%",
+    doctors: ["dr-p-mohan-krishna"],
+    equipment: ["alcon-constellation-vitrectomy", "appasamy-b-scan"],
+    faqs: [
+      { q: "Is retinal detachment an emergency?", a: "Yes. Retinal detachment is a sight-threatening emergency requiring surgery within 24-48 hours for the best visual outcome." },
+    ],
+  },
+  {
+    slug: "intravitreal-injection",
+    name: "Intravitreal Injection",
+    shortDescription: "Precision Anti-VEGF and steroid injection therapy for retinal vascular disease.",
+    icon: "syringe",
+    category: "Retina",
+    symptoms: ["Diabetic macular edema", "Wet macular degeneration", "Retinal vein occlusion"],
+    diagnosis: ["OCT Macular Scan", "Fluorescein Angiography"],
+    treatment: ["Anti-VEGF intravitreal injections", "Sustained-release steroid implants"],
+    recovery: "Outpatient procedure; patients resume normal activity the same day.",
+    successRate: "95%",
+    doctors: ["dr-p-mohan-krishna"],
+    equipment: ["zeiss-cirrus-oct"],
+    faqs: [],
+  },
+  {
+    slug: "cornea",
+    name: "Cornea",
+    shortDescription: "Comprehensive corneal care including infections, keratoconus, and transplant evaluation.",
+    icon: "circle-dot",
+    category: "Specialty",
+    symptoms: ["Redness and pain", "Blurred vision", "Light sensitivity", "Corneal scarring"],
+    diagnosis: ["Corneal Topography", "Slit Lamp Examination", "Pachymetry"],
+    treatment: ["Medical management of infections", "Corneal collagen cross-linking", "Corneal transplant referral"],
+    recovery: "Varies by condition; most infections resolve within 1-2 weeks with medical therapy.",
+    successRate: "94%",
+    doctors: ["dr-b-prathyusha"],
+    equipment: ["sirius-corneal-topography"],
+    faqs: [],
+  },
+  {
+    slug: "pediatric-ophthalmology",
+    name: "Pediatric Ophthalmology",
+    shortDescription: "Gentle, specialized eye care for infants and children including squint correction.",
+    icon: "baby",
+    category: "General",
+    symptoms: ["Squint or misaligned eyes", "Difficulty focusing", "Frequent eye rubbing"],
+    diagnosis: ["Comprehensive pediatric eye examination", "Vision screening", "Refraction under cycloplegia"],
+    treatment: ["Corrective glasses", "Vision therapy", "Squint surgery"],
+    recovery: "Most pediatric procedures allow same-day discharge with quick recovery.",
+    successRate: "97%",
+    doctors: ["dr-p-narasimha-rao"],
+    equipment: [],
+    faqs: [],
+  },
+  {
+    slug: "orbit-surgery",
+    name: "Orbit Surgery",
+    shortDescription: "Specialized surgical care for conditions affecting the eye socket and surrounding structures.",
+    icon: "shield",
+    category: "Specialty",
+    symptoms: ["Bulging eyes", "Eyelid swelling", "Restricted eye movement"],
+    diagnosis: ["Orbital Imaging", "Clinical Evaluation"],
+    treatment: ["Orbital decompression", "Tumor excision", "Reconstructive surgery"],
+    recovery: "Recovery varies by procedure, typically 2-4 weeks.",
+    successRate: "92%",
+    doctors: ["dr-p-mohan-krishna"],
+    equipment: [],
+    faqs: [],
+  },
+  {
+    slug: "uveitis",
+    name: "Uveitis",
+    shortDescription: "Diagnosis and management of inflammatory eye conditions to protect long-term vision.",
+    icon: "flame",
+    category: "Specialty",
+    symptoms: ["Eye redness", "Pain and light sensitivity", "Blurred vision", "Floaters"],
+    diagnosis: ["Slit Lamp Examination", "OCT", "Systemic Workup"],
+    treatment: ["Anti-inflammatory therapy", "Immunosuppressive management", "Surgical intervention for complications"],
+    recovery: "Managed as a chronic condition with regular monitoring; flare-ups typically resolve within weeks.",
+    successRate: "90%",
+    doctors: ["dr-p-mohan-krishna"],
+    equipment: ["zeiss-cirrus-oct"],
+    faqs: [],
+  },
+];
+
+export function getTreatment(slug: string) {
+  return treatments.find((t) => t.slug === slug);
+}
+
+export const featuredTreatments = treatments.filter((t) => t.featured);

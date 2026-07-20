@@ -1,0 +1,172 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { Dancing_Script } from "next/font/google";
+import { motion } from "framer-motion";
+import { Container } from "@/components/ui/container";
+import { Button } from "@/components/ui/button";
+import { Icon } from "@/components/ui/icon";
+import { site } from "@/lib/data/site";
+
+const script = Dancing_Script({ subsets: ["latin"], weight: ["600", "700"] });
+
+const features = [
+  {
+    icon: "microscope",
+    title: "Advanced Technology",
+    description: "State-of-the-art diagnostics & care",
+  },
+  {
+    icon: "stethoscope",
+    title: "Expert Surgeons",
+    description: "Highly experienced retina specialists",
+  },
+  {
+    icon: "scan-eye",
+    title: "Comprehensive Eye Care",
+    description: "From routine check-ups to complex surgeries",
+  },
+  {
+    icon: "heart-handshake",
+    title: "Compassionate Care",
+    description: "Patient-first approach at every step",
+  },
+];
+
+export function Hero() {
+  return (
+    <section className="section-hero relative overflow-hidden bg-white pb-10 pt-28 sm:pt-32 lg:pt-36">
+      <div className="pointer-events-none absolute inset-0 bg-mesh" />
+      <div className="pointer-events-none absolute -left-32 top-10 h-96 w-96 rounded-full bg-brand-100 blur-3xl animate-blob" />
+      <div className="pointer-events-none absolute -right-24 top-40 h-[28rem] w-[28rem] rounded-full bg-accent-100 blur-3xl animate-blob [animation-delay:3s]" />
+      <div className="pointer-events-none absolute inset-0 noise-overlay" />
+
+      <Container className="relative flex flex-col gap-14">
+        <div className="relative grid grid-cols-1 items-center gap-16 lg:min-h-[600px]">
+          <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[48%] lg:block">
+            <Image
+              src="/Images/HeroImg.png"
+              alt="Close-up human eye with vitreo-retinal microsurgery in progress and cross-sectional eye anatomy"
+              fill
+              priority
+              sizes="48vw"
+              className="object-contain object-right-bottom"
+            />
+
+            <div className="glass-strong absolute bottom-4 right-2 flex items-center gap-3 rounded-2xl px-4 py-3 shadow-glass">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent-400/15 text-accent-400">
+                <Icon name="target" className="h-5 w-5" />
+              </span>
+              <span className="text-xs leading-tight text-ink">
+                Specialized in
+                <br />
+                <span className="font-heading text-sm font-extrabold text-accent-400">
+                  Vitreo Retinal Care
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <div className="relative z-10 max-w-2xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="inline-flex items-center gap-2 rounded-full border border-ink/10 px-4 py-2 text-xs font-bold text-brand-600"
+            >
+              <span className="h-1.5 w-1.5 rounded-full bg-accent-400" />
+              Expert Care. <span className="text-accent-400">Advanced Vision.</span>
+            </motion.div>
+
+            <motion.h1
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className="mt-5 font-heading text-5xl font-extrabold leading-[1.05] text-ink sm:text-6xl lg:text-[3.6rem]"
+            >
+              See the World
+              <br />
+              <span className="text-brand-600">Clearly, Live</span>{" "}
+              <span className={`${script.className} text-accent-400 text-6xl sm:text-7xl`}>
+                Fully
+              </span>
+            </motion.h1>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mt-6 h-px w-28 bg-ink/15"
+            />
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.25 }}
+              className="mt-6"
+            >
+              <p className="text-lg text-slate">Advanced Eye Care with a Focus on</p>
+              <p className="font-heading text-xl font-extrabold uppercase tracking-wide sm:text-2xl">
+                <span className="text-brand-600">Vitreo</span>{" "}
+                <span className="text-accent-400">Retinal Surgeries</span>
+              </p>
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className="mt-5 max-w-xl text-base leading-relaxed text-slate"
+            >
+              From complex retinal treatments to everyday eye care, we bring clarity
+              to your vision with compassion and expertise.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+              className="mt-9 flex flex-wrap items-center gap-4"
+            >
+              <Button asChild size="lg" variant="primary">
+                <Link href="/contact">
+                  <Icon name="calendar" className="h-4 w-4" />
+                  Book Appointment
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <a href={`tel:${site.phoneRaw}`}>
+                  <Icon name="phone" className="h-4 w-4" />
+                  Call Us Now
+                </a>
+              </Button>
+            </motion.div>
+          </div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.6 }}
+          className="glass-card grid grid-cols-2 gap-x-6 gap-y-8 rounded-[2rem] p-6 sm:p-8 lg:grid-cols-4"
+        >
+          {features.map((f) => (
+            <div key={f.title} className="flex items-start gap-3">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
+                <Icon name={f.icon} className="h-5 w-5" />
+              </span>
+              <div>
+                <p className="font-heading text-sm font-bold leading-tight text-ink">
+                  {f.title}
+                </p>
+                <p className="mt-1 text-xs leading-snug text-slate">{f.description}</p>
+              </div>
+            </div>
+          ))}
+        </motion.div>
+      </Container>
+    </section>
+  );
+}
