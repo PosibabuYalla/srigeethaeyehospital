@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PageHero } from "@/components/sections/page-hero";
+import { AboutHero } from "@/components/sections/about/about-hero";
 import { MissionVision } from "@/components/sections/about/mission-vision";
 import { Timeline } from "@/components/sections/about/timeline";
 import { Infrastructure } from "@/components/sections/about/infrastructure";
@@ -19,12 +19,7 @@ export default function AboutPage() {
   return (
     <>
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "About", href: "/about" }]} />
-      <PageHero
-        eyebrow="About Sri Geetha Eye Hospital"
-        title={<>40 Years of Trusted, <span className="text-gradient">Advanced Eye Care</span></>}
-        description="Since 1985, we have grown from a single clinic into the region's most technologically advanced eye hospital — without ever losing sight of the patient in front of us."
-        breadcrumb={[{ label: "Home", href: "/" }, { label: "About" }]}
-      />
+      <AboutHero />
       <TrustStats />
       <MissionVision />
       <Timeline />

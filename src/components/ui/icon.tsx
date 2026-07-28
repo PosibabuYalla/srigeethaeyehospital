@@ -59,6 +59,7 @@ import {
   FlaskConical,
   Glasses,
   ScanFace,
+  Anchor,
 } from "lucide-react";
 
 const iconMap = {
@@ -121,6 +122,7 @@ const iconMap = {
   "flask-conical": FlaskConical,
   glasses: Glasses,
   "scan-face": ScanFace,
+  anchor: Anchor,
 } as const;
 
 export type IconName = keyof typeof iconMap;

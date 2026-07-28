@@ -16,11 +16,11 @@ export const doctors: Doctor[] = [
   {
     slug: "dr-p-mohan-krishna",
     name: "Dr. P. Mohan Krishna",
-    role: "Vitreo Retinal Surgeon",
+    role: "Consultant Vitreo-Retinal Surgeon",
     credentials: ["MS (Oph)", "FVRS"],
     trainedAt: "Aravind Eye Hospital",
     image: "/images/doctors/mohan-krishna.jpg",
-    bio: "Dr. P. Mohan Krishna is the region's leading Vitreo Retinal Surgeon, trained at Aravind Eye Hospital and specializing in complex retinal surgery using imported micro-incision vitrectomy systems. He has led thousands of sight-restoring retinal procedures.",
+    bio: "Dr. P. Mohan Krishna is a Consultant Vitreo-Retinal Surgeon and one of the leading Vitreo-Retinal Surgeons in Guntur and the nearby districts. Trained at Aravind Eye Hospital, he is associated with leading hospitals in the region and specializes in complex retinal surgery using imported micro-incision vitrectomy systems. He has led thousands of sight-restoring retinal procedures.",
     specializations: [
       "Vitreo Retinal Surgery",
       "Retinal Detachment",
@@ -34,7 +34,7 @@ export const doctors: Doctor[] = [
       { degree: "MS (Ophthalmology)", institute: "Andhra Medical College" },
       { degree: "Fellowship in Vitreo Retinal Surgery (FVRS)", institute: "Aravind Eye Hospital" },
     ],
-    treatments: ["vitreo-retinal-surgery", "diabetic-eye-disease", "retinal-detachment", "macular-degeneration", "intravitreal-injection"],
+    treatments: ["vitreo-retinal-surgery", "diabetic-eye-disease", "retinal-detachment", "macular-degeneration", "macular-hole-surgery", "scleral-fixation", "intravitreal-injection"],
   },
   {
     slug: "dr-p-narasimha-rao",

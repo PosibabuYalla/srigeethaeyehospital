@@ -1,5 +1,5 @@
 export const milestones = [
-  { year: "1985", title: "The Beginning", description: "Sri Geetha Eye Hospital was founded in Guntur with a mission to bring quality eye care within reach of every family." },
+  { year: "1983", title: "The Beginning", description: "Sri Geetha Eye Hospital was founded in Guntur with a mission to bring quality eye care within reach of every family." },
   { year: "1998", title: "Surgical Expansion", description: "Introduced modern cataract surgery with the region's first phacoemulsification systems." },
   { year: "2008", title: "Diagnostic Upgrade", description: "Added digital fundus photography and automated visual field analysis for early disease detection." },
   { year: "2015", title: "Vitreo Retinal Unit", description: "Launched the region's first dedicated Vitreo Retinal Surgery unit with a fellowship-trained retina surgeon." },
@@ -8,6 +8,7 @@ export const milestones = [
 ];
 
 export const infrastructureHighlights = [
+  { icon: "trophy", title: "Pioneering Technology", description: "One of the first hospitals in the region to introduce the Phacoemulsification System, Vitreo-Retinal Surgical System, and Constellation System — among the earliest centres in the combined Guntur district to adopt these technologies." },
   { icon: "building-2", title: "Modular Operation Theatre", description: "Laminar-flow, infection-controlled OT built to international surgical standards." },
   { icon: "scan-line", title: "Advanced Diagnostic Suite", description: "Dedicated imaging floor housing OCT, fundus and field-analysis systems." },
   { icon: "microscope", title: "Retina Surgical Wing", description: "Purpose-built for micro-incision vitrectomy and complex retinal procedures." },

@@ -24,7 +24,7 @@ const infoCards = [
   {
     icon: "phone",
     title: "Call Us",
-    lines: [site.phone, `Emergency: ${site.emergencyPhone}`],
+    lines: [site.phone, "Available on WhatsApp"],
   },
   {
     icon: "mail",
@@ -86,14 +86,50 @@ export default function ContactPage() {
           </Reveal>
 
           <Reveal className="lg:col-span-2" delay={0.1}>
-            <div className="glass-card h-full min-h-[420px] overflow-hidden rounded-3xl p-2">
-              <iframe
-                title={`${site.name} Location`}
-                src={site.mapEmbedSrc}
-                className="h-full min-h-[400px] w-full rounded-2xl border-0"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+            <div className="glass-card flex h-full flex-col gap-4 rounded-3xl p-4">
+              <div className="min-h-[320px] flex-1 overflow-hidden rounded-2xl">
+                <iframe
+                  title={`${site.name} Location`}
+                  src={site.mapEmbedSrc}
+                  className="h-full min-h-[320px] w-full border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+              <div className="flex items-center justify-between gap-4 rounded-2xl bg-white/60 p-4">
+                <div className="flex items-start gap-3">
+                  <Icon name="map-pin" className="mt-0.5 h-4 w-4 shrink-0 text-brand-600" />
+                  <div>
+                    <p className="text-sm font-semibold text-ink">{site.address.line1}</p>
+                    <p className="text-xs text-slate">{site.address.line2}, {site.address.city} - {site.address.zip}</p>
+                    <a
+                      href={site.mapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1.5 inline-flex items-center gap-1 text-xs font-bold text-brand-600 hover:text-brand-700"
+                    >
+                      Get Directions
+                      <Icon name="arrow-up-right" className="h-3.5 w-3.5" />
+                    </a>
+                  </div>
+                </div>
+                <a
+                  href={site.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex shrink-0 flex-col items-center gap-1"
+                  aria-label="Scan QR code for directions to the hospital"
+                >
+                  <img
+                    src={`https://api.qrserver.com/v1/create-qr-code/?size=88x88&data=${encodeURIComponent(site.mapsUrl)}`}
+                    alt="QR code linking to hospital location on Google Maps"
+                    width={72}
+                    height={72}
+                    className="rounded-lg border border-ink/10 bg-white p-1"
+                  />
+                  <span className="text-[10px] font-semibold text-slate">Scan for directions</span>
+                </a>
+              </div>
             </div>
           </Reveal>
         </Container>

@@ -118,16 +118,15 @@ export function Header() {
             )}
           </nav>
 
-          <div className="hidden items-center gap-2 lg:flex">
+          <div className="hidden items-center gap-3 lg:flex">
             <a
-              href={`tel:${site.emergencyPhone}`}
-              className="flex items-center gap-2 rounded-full px-3 py-2 text-xs font-bold text-brand-700"
+              href={`tel:${site.phoneRaw}`}
+              className="flex items-center gap-2 rounded-full px-3 py-2 text-sm font-bold text-brand-700 transition-colors hover:text-brand-600"
             >
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
-                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-red-500" />
+              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand-50 text-brand-600">
+                <Icon name="phone" className="h-3.5 w-3.5" />
               </span>
-              Emergency
+              {site.phone}
             </a>
             <Button asChild size="default" variant="primary">
               <Link href="/contact">Book Appointment</Link>
@@ -168,7 +167,10 @@ export function Header() {
                   <Link href="/contact" onClick={() => setMobileOpen(false)}>Book Appointment</Link>
                 </Button>
                 <Button asChild variant="outline">
-                  <a href={`tel:${site.emergencyPhone}`}>Emergency Call</a>
+                  <a href={`tel:${site.phoneRaw}`}>
+                    <Icon name="phone" className="h-4 w-4" />
+                    {site.phone}
+                  </a>
                 </Button>
               </div>
             </div>

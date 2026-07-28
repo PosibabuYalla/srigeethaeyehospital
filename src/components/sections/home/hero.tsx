@@ -85,11 +85,11 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="mt-5 font-heading text-5xl font-extrabold leading-[1.05] text-ink sm:text-6xl lg:text-[3.6rem]"
             >
-              See the World
+              We are here to help you
               <br />
-              <span className="text-brand-600">Clearly, Live</span>{" "}
+              <span className="text-brand-600">see</span>{" "}
               <span className={`${script.className} text-accent-400 text-6xl sm:text-7xl`}>
-                Fully
+                better.
               </span>
             </motion.h1>
 
