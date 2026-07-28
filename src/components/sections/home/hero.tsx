@@ -1,12 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { Dancing_Script } from "next/font/google";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icon";
+import { BookAppointmentDialog } from "@/components/sections/contact/book-appointment-dialog";
 import { site } from "@/lib/data/site";
 
 const script = Dancing_Script({ subsets: ["latin"], weight: ["600", "700"] });
@@ -49,7 +49,6 @@ export function Hero() {
               src="/Images/heroImageHome.webp"
               alt="Stylized illustration of a Sri Geetha Eye Hospital surgical team performing advanced vitreo-retinal eye surgery with precision instruments"
               fill
-              loading="eager"
               fetchPriority="high"
               sizes="60vw"
               className="object-contain object-right-bottom"
@@ -130,12 +129,12 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.4 }}
               className="mt-9 flex flex-wrap items-center gap-4"
             >
-              <Button asChild size="lg" variant="primary">
-                <Link href="/contact">
+              <BookAppointmentDialog>
+                <Button size="lg" variant="primary">
                   <Icon name="calendar" className="h-4 w-4" />
                   Book Appointment
-                </Link>
-              </Button>
+                </Button>
+              </BookAppointmentDialog>
               <Button asChild size="lg" variant="outline">
                 <a href={`tel:${site.phoneRaw}`}>
                   <Icon name="phone" className="h-4 w-4" />
@@ -145,6 +144,36 @@ export function Hero() {
             </motion.div>
           </div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.92 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="relative mx-auto w-full max-w-sm sm:max-w-md lg:hidden"
+        >
+          <div className="relative aspect-[3/2] w-full">
+            <Image
+              src="/Images/heroImageHome.webp"
+              alt="Stylized illustration of a Sri Geetha Eye Hospital surgical team performing advanced vitreo-retinal eye surgery with precision instruments"
+              fill
+              fetchPriority="high"
+              sizes="(min-width: 640px) 28rem, 90vw"
+              className="object-contain"
+            />
+          </div>
+          <div className="glass-strong absolute bottom-1 right-1 flex items-center gap-2 rounded-2xl px-3 py-2 shadow-glass sm:bottom-2 sm:right-2">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent-400/15 text-accent-400">
+              <Icon name="target" className="h-4 w-4" />
+            </span>
+            <span className="text-[11px] leading-tight text-ink">
+              Specialized in
+              <br />
+              <span className="font-heading text-xs font-extrabold text-accent-400">
+                Vitreo Retinal Care
+              </span>
+            </span>
+          </div>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

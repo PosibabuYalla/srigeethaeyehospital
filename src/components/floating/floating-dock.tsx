@@ -2,7 +2,6 @@
 
 import { AnimatePresence, motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
-import Link from "next/link";
 import { Icon } from "@/components/ui/icon";
 import {
   Dialog,
@@ -11,6 +10,7 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
+import { BookAppointmentDialog } from "@/components/sections/contact/book-appointment-dialog";
 import { site } from "@/lib/data/site";
 
 export function FloatingDock() {
@@ -96,14 +96,15 @@ export function FloatingDock() {
         </DialogContent>
       </Dialog>
 
-      <Link
-        href="/contact"
-        aria-label="Book appointment"
-        className="group flex h-14 max-w-14 items-center justify-start gap-2 overflow-hidden rounded-full bg-gradient-to-r from-accent-400 to-orange-500 pl-[17px] text-sm font-bold whitespace-nowrap text-white shadow-lg shadow-orange-500/30 transition-[max-width] duration-300 ease-out hover:max-w-[220px]"
-      >
-        <Icon name="calendar" className="h-5 w-5 shrink-0" />
-        <span className="pr-5">Book Appointment</span>
-      </Link>
+      <BookAppointmentDialog>
+        <button
+          aria-label="Book appointment"
+          className="group flex h-14 max-w-14 items-center justify-start gap-2 overflow-hidden rounded-full bg-gradient-to-r from-accent-400 to-orange-500 pl-[17px] text-sm font-bold whitespace-nowrap text-white shadow-lg shadow-orange-500/30 transition-[max-width] duration-300 ease-out hover:max-w-[220px]"
+        >
+          <Icon name="calendar" className="h-5 w-5 shrink-0" />
+          <span className="pr-5">Book Appointment</span>
+        </button>
+      </BookAppointmentDialog>
     </div>
   );
 }

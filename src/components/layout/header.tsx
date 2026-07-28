@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Icon } from "@/components/ui/icon";
 import { Button } from "@/components/ui/button";
+import { BookAppointmentDialog } from "@/components/sections/contact/book-appointment-dialog";
 import { site, navLinks } from "@/lib/data/site";
 import { treatments } from "@/lib/data/treatments";
 import { cn } from "@/lib/utils";
@@ -129,9 +130,9 @@ export function Header() {
               </span>
               {site.phone}
             </a>
-            <Button asChild size="default" variant="primary">
-              <Link href="/contact">Book Appointment</Link>
-            </Button>
+            <BookAppointmentDialog>
+              <Button size="default" variant="primary">Book Appointment</Button>
+            </BookAppointmentDialog>
           </div>
 
           <button
@@ -164,9 +165,9 @@ export function Header() {
                 </Link>
               ))}
               <div className="mt-2 flex flex-col gap-2 border-t border-white/40 pt-3">
-                <Button asChild variant="primary">
-                  <Link href="/contact" onClick={() => setMobileOpen(false)}>Book Appointment</Link>
-                </Button>
+                <BookAppointmentDialog>
+                  <Button variant="primary" onClick={() => setMobileOpen(false)}>Book Appointment</Button>
+                </BookAppointmentDialog>
                 <Button asChild variant="outline">
                   <a href={`tel:${site.phoneRaw}`}>
                     <Icon name="phone" className="h-4 w-4" />

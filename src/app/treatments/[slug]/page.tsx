@@ -9,6 +9,7 @@ import { Icon } from "@/components/ui/icon";
 import { Reveal } from "@/components/motion/reveal";
 import { FaqSection } from "@/components/sections/faq-section";
 import { CtaSection } from "@/components/sections/cta-section";
+import { BookAppointmentDialog } from "@/components/sections/contact/book-appointment-dialog";
 import { treatments, getTreatment } from "@/lib/data/treatments";
 import { getDoctor } from "@/lib/data/doctors";
 import { getEquipment } from "@/lib/data/equipment";
@@ -121,12 +122,12 @@ export default async function TreatmentDetailPage({
                 <p className="text-xs font-bold uppercase tracking-wide text-slate">Success Rate</p>
                 <p className="mt-2 font-heading text-4xl font-extrabold text-brand-600">{treatment.successRate}</p>
                 <div className="mt-5 flex flex-col gap-2 border-t border-ink/5 pt-5">
-                  <Button asChild variant="primary">
-                    <Link href="/contact">
+                  <BookAppointmentDialog>
+                    <Button variant="primary">
                       Book Appointment
                       <Icon name="arrow-right" className="h-4 w-4" />
-                    </Link>
-                  </Button>
+                    </Button>
+                  </BookAppointmentDialog>
                   <Button asChild variant="outline">
                     <a href={`tel:${site.phoneRaw}`}>
                       <Icon name="phone" className="h-4 w-4" />

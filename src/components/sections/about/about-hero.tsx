@@ -8,6 +8,7 @@ import { Icon } from "@/components/ui/icon";
 import { Badge } from "@/components/ui/badge";
 import { Reveal } from "@/components/motion/reveal";
 import { StatCounter } from "@/components/ui/stat-counter";
+import { BookAppointmentDialog } from "@/components/sections/contact/book-appointment-dialog";
 import { site } from "@/lib/data/site";
 
 const credentials = [
@@ -102,12 +103,12 @@ export function AboutHero() {
 
             <Reveal delay={0.4}>
               <div className="mt-9 flex flex-wrap items-center gap-4">
-                <Button asChild size="lg" variant="primary">
-                  <Link href="/contact">
+                <BookAppointmentDialog>
+                  <Button size="lg" variant="primary">
                     <Icon name="calendar" className="h-4 w-4" />
                     Book Appointment
-                  </Link>
-                </Button>
+                  </Button>
+                </BookAppointmentDialog>
                 <Button asChild size="lg" variant="outline">
                   <a href={`tel:${site.phoneRaw}`}>
                     <Icon name="phone" className="h-4 w-4" />

@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icon";
 import { treatments } from "@/lib/data/treatments";
+import { site } from "@/lib/data/site";
 import { cn } from "@/lib/utils";
 
 type FormValues = {
@@ -20,6 +21,20 @@ type FormValues = {
 const inputClass =
   "w-full rounded-xl border border-ink/10 bg-white/70 px-4 py-3 text-sm text-ink placeholder:text-slate/60 outline-none transition-colors focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20";
 
+function buildWhatsAppMessage(data: FormValues) {
+  const lines = [
+    "Hi, I would like to book an appointment at Sri Geetha Eye Hospital.",
+    "",
+    `Name: ${data.name}`,
+    `Phone: ${data.phone}`,
+  ];
+  if (data.email) lines.push(`Email: ${data.email}`);
+  if (data.treatment) lines.push(`Treatment: ${data.treatment}`);
+  if (data.preferredDate) lines.push(`Preferred Date: ${data.preferredDate}`);
+  if (data.message) lines.push(`Message: ${data.message}`);
+  return lines.join("\n");
+}
+
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const {
@@ -29,7 +44,9 @@ export function ContactForm() {
     formState: { errors, isSubmitting },
   } = useForm<FormValues>();
 
-  async function onSubmit() {
+  async function onSubmit(data: FormValues) {
+    const whatsappUrl = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(buildWhatsAppMessage(data))}`;
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
     await new Promise((r) => setTimeout(r, 900));
     setSubmitted(true);
     reset();
@@ -47,7 +64,7 @@ export function ContactForm() {
             className="mb-6 flex items-center gap-3 rounded-2xl border border-brand-200 bg-brand-50 px-5 py-4 text-sm font-semibold text-brand-700"
           >
             <Icon name="check-circle" className="h-5 w-5 shrink-0" />
-            Thank you! Your appointment request has been received. Our team will contact you shortly.
+            Thank you! We&apos;ve opened WhatsApp with your appointment details — just hit send to confirm your request.
           </motion.div>
         )}
       </AnimatePresence>

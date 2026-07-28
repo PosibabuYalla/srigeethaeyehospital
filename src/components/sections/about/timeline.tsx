@@ -5,7 +5,7 @@ import { milestones } from "@/lib/data/misc";
 
 export function Timeline() {
   return (
-    <section className="section-screen relative bg-offwhite py-24 sm:py-32">
+    <section className="section-screen relative overflow-hidden bg-offwhite py-24 sm:py-32">
       <Container>
         <SectionHeading
           eyebrow="Our Journey"

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icon";
@@ -10,6 +9,7 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
+import { BookAppointmentDialog } from "@/components/sections/contact/book-appointment-dialog";
 import { site } from "@/lib/data/site";
 
 export function CtaSection() {
@@ -34,12 +34,12 @@ export function CtaSection() {
                 imported technology combined with genuine compassionate care.
               </p>
               <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                <Button asChild size="lg" variant="accent">
-                  <Link href="/contact">
+                <BookAppointmentDialog>
+                  <Button size="lg" variant="accent">
                     Book Appointment
                     <Icon name="arrow-right" className="h-4 w-4" />
-                  </Link>
-                </Button>
+                  </Button>
+                </BookAppointmentDialog>
                 <Button asChild size="lg" variant="glass" className="text-white">
                   <a href={`tel:${site.phoneRaw}`} className="text-lg font-extrabold tracking-wide">
                     <Icon name="phone" className="h-5 w-5" />

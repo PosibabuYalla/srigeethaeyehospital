@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icon";
 import { Reveal } from "@/components/motion/reveal";
 import { CtaSection } from "@/components/sections/cta-section";
+import { BookAppointmentDialog } from "@/components/sections/contact/book-appointment-dialog";
 import { doctors, getDoctor } from "@/lib/data/doctors";
 import { getTreatment } from "@/lib/data/treatments";
 import { BreadcrumbSchema, PhysicianSchema } from "@/components/seo/schema";
@@ -78,12 +79,12 @@ export default async function DoctorDetailPage({
                 </Badge>
               )}
               <div className="relative mt-6 flex w-full flex-col gap-2">
-                <Button asChild variant="primary">
-                  <Link href="/contact">
+                <BookAppointmentDialog>
+                  <Button variant="primary">
                     Book Appointment
                     <Icon name="arrow-right" className="h-4 w-4" />
-                  </Link>
-                </Button>
+                  </Button>
+                </BookAppointmentDialog>
                 <Button asChild variant="outline">
                   <a href={`tel:${site.phoneRaw}`}>
                     <Icon name="phone" className="h-4 w-4" />
