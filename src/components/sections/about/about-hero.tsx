@@ -128,7 +128,7 @@ export function AboutHero() {
               transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
               className="relative flex h-56 w-56 items-center justify-center rounded-full sm:h-64 sm:w-64"
             >
-              <div className="absolute inset-0 rounded-full border-2 border-dashed border-brand-300/60 animate-spin-slow" />
+              <div className="absolute -inset-6 rounded-full border-2 border-dashed border-brand-300/60 animate-spin-slow" />
               <div className="absolute -inset-3 rounded-full border border-accent-300/40" />
               <div className="relative flex h-full w-full flex-col items-center justify-center gap-1 rounded-full bg-gradient-to-br from-brand-600 via-brand-500 to-teal-700 text-white shadow-glass-lg">
                 <div className="absolute inset-0 rounded-full bg-mesh opacity-30" />

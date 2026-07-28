@@ -44,14 +44,14 @@ export function Hero() {
 
       <Container className="relative flex flex-col gap-14">
         <div className="relative grid grid-cols-1 items-center gap-16 lg:min-h-[600px]">
-          <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[48%] lg:block">
+          <div className="pointer-events-none absolute bottom-0 right-0 hidden w-[56%] h-[118%] lg:block">
             <Image
-              src="/Images/HeroImg.png"
-              alt="Close-up human eye with vitreo-retinal microsurgery in progress and cross-sectional eye anatomy"
+              src="/Images/heroImageHome.webp"
+              alt="Stylized illustration of a Sri Geetha Eye Hospital surgical team performing advanced vitreo-retinal eye surgery with precision instruments"
               fill
               loading="eager"
               fetchPriority="high"
-              sizes="48vw"
+              sizes="60vw"
               className="object-contain object-right-bottom"
             />
 
@@ -69,7 +69,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative z-10 max-w-2xl">
+          <div className="relative z-10 max-w-2xl lg:max-w-[38%]">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
