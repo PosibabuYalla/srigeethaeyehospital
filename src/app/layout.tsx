@@ -25,8 +25,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} | Advanced Eye Care in ${site.city}`,
-    template: `%s | ${site.name}`,
+    default: `Srigeetha Eye Hospital | Advanced Eye Care in ${site.city}`,
+    template: `%s | Srigeetha Eye Hospital`,
   },
   description:
     "Sri Geetha Eye Hospital, Guntur — the region's only dedicated Vitreo Retinal Surgery centre, with imported ZEISS, Alcon and AMO equipment, expert retina specialists, and 40+ years of trusted eye care.",

@@ -10,9 +10,10 @@ import { Testimonials } from "@/components/sections/home/testimonials";
 import { FaqSection } from "@/components/sections/faq-section";
 import { CtaSection } from "@/components/sections/cta-section";
 import { faqs } from "@/lib/data/misc";
+import { site } from "@/lib/data/site";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: `Srigeetha Eye Hospital | Advanced Eye Care in ${site.city}`,
   description:
     "Sri Geetha Eye Hospital, Guntur — the region's only dedicated Vitreo Retinal Surgery centre, with imported ZEISS, Alcon and AMO equipment, expert retina specialists, and 40+ years of trusted eye care.",
   alternates: { canonical: "/" },

@@ -49,7 +49,8 @@ export function Hero() {
               src="/Images/HeroImg.png"
               alt="Close-up human eye with vitreo-retinal microsurgery in progress and cross-sectional eye anatomy"
               fill
-              priority
+              loading="eager"
+              fetchPriority="high"
               sizes="48vw"
               className="object-contain object-right-bottom"
             />

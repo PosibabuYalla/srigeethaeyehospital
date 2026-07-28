@@ -4,6 +4,13 @@ import { AnimatePresence, motion, useScroll, useMotionValueEvent } from "framer-
 import { useState } from "react";
 import Link from "next/link";
 import { Icon } from "@/components/ui/icon";
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 import { site } from "@/lib/data/site";
 
 export function FloatingDock() {
@@ -50,6 +57,44 @@ export function FloatingDock() {
       >
         <Icon name="phone" className="h-6 w-6" />
       </a>
+
+      <Dialog>
+        <DialogTrigger asChild>
+          <button
+            aria-label="Get directions"
+            className="flex h-14 w-14 items-center justify-center rounded-full bg-ink text-white shadow-lg shadow-ink/30 transition-transform hover:scale-110"
+          >
+            <Icon name="map-pin" className="h-6 w-6" />
+          </button>
+        </DialogTrigger>
+        <DialogContent className="text-center">
+          <DialogTitle>Get Directions</DialogTitle>
+          <DialogDescription>
+            Scan the QR code with your phone camera to open {site.name} on Google Maps.
+          </DialogDescription>
+          <div className="mt-6 flex justify-center">
+            <img
+              src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(site.mapsUrl)}`}
+              alt="QR code linking to hospital location on Google Maps"
+              width={200}
+              height={200}
+              className="rounded-2xl border border-ink/10 bg-white p-2"
+            />
+          </div>
+          <p className="mt-4 text-xs text-slate">
+            {site.address.line1}, {site.address.line2}, {site.address.city} - {site.address.zip}
+          </p>
+          <a
+            href={site.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center justify-center gap-1.5 text-sm font-bold text-brand-600 hover:text-brand-700"
+          >
+            Open in Google Maps
+            <Icon name="arrow-up-right" className="h-4 w-4" />
+          </a>
+        </DialogContent>
+      </Dialog>
 
       <Link
         href="/contact"

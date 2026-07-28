@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Icon } from "@/components/ui/icon";
 import { Badge } from "@/components/ui/badge";
@@ -15,15 +16,16 @@ export function EquipmentCard({ equipment, index = 0 }: { equipment: Equipment; 
       whileHover={{ y: -6 }}
       className="glass-card group relative flex h-full flex-col overflow-hidden rounded-3xl"
     >
-      <div className="relative flex h-48 items-center justify-center overflow-hidden bg-gradient-to-br from-brand-600 via-brand-500 to-teal-700">
-        <div className="absolute inset-0 bg-mesh opacity-40" />
-        <motion.div
-          className="relative flex h-24 w-24 items-center justify-center rounded-3xl bg-white/15 backdrop-blur-md ring-1 ring-white/30"
-          whileHover={{ rotate: 6, scale: 1.08 }}
-          transition={{ type: "spring", stiffness: 250, damping: 15 }}
-        >
-          <Icon name="microscope" className="h-11 w-11 text-white" />
-        </motion.div>
+      <div className="relative h-56 overflow-hidden bg-gradient-to-br from-slate-50 to-brand-50">
+        <div className="absolute inset-0 bg-mesh opacity-20" />
+        <Image
+          src={equipment.image}
+          alt={equipment.name}
+          fill
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+          className="object-contain p-6 transition-transform duration-500 ease-out group-hover:scale-[1.08]"
+        />
+        <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-white/70 to-transparent" />
         {equipment.imported && (
           <div className="absolute right-3 top-3">
             <Badge variant="accent">Imported</Badge>

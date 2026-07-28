@@ -1,6 +1,6 @@
 "use client";
 
-import { Icon } from "@/components/ui/icon";
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { equipmentList } from "@/lib/data/equipment";
 
@@ -28,13 +28,17 @@ function MarqueeRow({
       {items.map((eq, i) => (
         <div
           key={`${eq.slug}-${i}`}
-          className="group glass-card relative flex w-[220px] shrink-0 flex-col items-center overflow-hidden rounded-3xl transition-all duration-300 hover:-translate-y-2 hover:shadow-glass-lg sm:w-[250px]"
+          className="group relative flex w-[220px] shrink-0 flex-col items-center overflow-hidden rounded-3xl border border-ink/5 bg-white shadow-glass transition-all duration-300 hover:-translate-y-2 hover:shadow-glass-lg sm:w-[250px]"
         >
-          <div className="relative flex h-32 w-full items-center justify-center overflow-hidden bg-gradient-to-br from-brand-600 via-brand-500 to-teal-700 sm:h-36">
-            <div className="absolute inset-0 bg-mesh opacity-40" />
-            <span className="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-md ring-1 ring-white/30 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
-              <Icon name="microscope" className="h-7 w-7 text-white" />
-            </span>
+          <div className="relative h-32 w-full overflow-hidden bg-gradient-to-br from-brand-50 via-white to-teal-50 sm:h-36">
+            <div className="absolute inset-0 bg-mesh opacity-20" />
+            <Image
+              src={eq.image}
+              alt={eq.name}
+              fill
+              sizes="250px"
+              className="object-contain p-4 transition-transform duration-500 ease-out group-hover:scale-110"
+            />
             {eq.imported && (
               <div className="absolute right-2.5 top-2.5">
                 <Badge variant="accent" className="text-[9px]">Imported</Badge>

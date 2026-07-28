@@ -48,7 +48,8 @@ export function Header() {
               alt={site.name}
               width={1272}
               height={284}
-              priority
+              loading="eager"
+              fetchPriority="high"
               className="h-8 w-auto sm:h-10"
             />
           </Link>
