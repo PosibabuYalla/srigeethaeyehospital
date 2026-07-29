@@ -15,7 +15,7 @@ import { site } from "@/lib/data/site";
 export const metadata: Metadata = {
   title: `Srigeetha Eye Hospital | Advanced Eye Care in ${site.city}`,
   description:
-    "Sri Geetha Eye Hospital, Guntur — the region's only dedicated Vitreo Retinal Surgery centre, with imported ZEISS, Alcon and AMO equipment, expert retina specialists, and 40+ years of trusted eye care.",
+    "Sri Geetha Eye Hospital, Guntur, the region's only dedicated Vitreo Retinal Surgery centre, with imported ZEISS, Alcon and AMO equipment, expert retina specialists, and 40+ years of trusted eye care.",
   alternates: { canonical: "/" },
 };
 

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: `%s | Srigeetha Eye Hospital`,
   },
   description:
-    "Sri Geetha Eye Hospital, Guntur — the region's only dedicated Vitreo Retinal Surgery centre, with imported ZEISS, Alcon and AMO equipment, expert retina specialists, and 40+ years of trusted eye care.",
+    "Sri Geetha Eye Hospital, Guntur, the region's only dedicated Vitreo Retinal Surgery centre, with imported ZEISS, Alcon and AMO equipment, expert retina specialists, and 40+ years of trusted eye care.",
   keywords: [
     "Sri Geetha Eye Hospital",
     "Eye Hospital Guntur",
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: `${site.name} | Advanced Eye Care in ${site.city}`,
     description:
-      "The region's only dedicated Vitreo Retinal Surgery centre — imported world-class equipment, expert specialists, premium eye care.",
+      "The region's only dedicated Vitreo Retinal Surgery centre, with imported world-class equipment, expert specialists, and premium eye care.",
     images: [{ url: "/images/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${site.name} | Advanced Eye Care in ${site.city}`,
     description:
-      "The region's only dedicated Vitreo Retinal Surgery centre — imported world-class equipment, expert specialists.",
+      "The region's only dedicated Vitreo Retinal Surgery centre, with imported world-class equipment and expert specialists.",
     images: ["/images/og-image.jpg"],
   },
   robots: { index: true, follow: true },

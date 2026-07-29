@@ -45,7 +45,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Get in Touch"
         title={<>Book Your <span className="text-gradient">Appointment Today</span></>}
-        description="Reach out by phone, WhatsApp, or the form below — our team responds promptly to every enquiry."
+        description="Reach out by phone, WhatsApp, or the form below. Our team responds promptly to every enquiry."
         breadcrumb={[{ label: "Home", href: "/" }, { label: "Contact" }]}
       />
 

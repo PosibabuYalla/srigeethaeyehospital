@@ -8,7 +8,7 @@ import { BreadcrumbSchema } from "@/components/seo/schema";
 export const metadata: Metadata = {
   title: "Treatments",
   description:
-    "Explore comprehensive eye care treatments at Sri Geetha Eye Hospital — from Vitreo Retinal Surgery and Cataract Surgery to LASIK, Glaucoma and Pediatric Ophthalmology.",
+    "Explore comprehensive eye care treatments at Sri Geetha Eye Hospital, from Vitreo Retinal Surgery and Cataract Surgery to LASIK, Glaucoma and Pediatric Ophthalmology.",
   alternates: { canonical: "/treatments" },
 };
 

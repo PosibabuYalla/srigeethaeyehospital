@@ -17,7 +17,7 @@ export function EquipmentPreview() {
         <SectionHeading
           eyebrow="Equipment"
           title={<>Premium <span className="text-gradient">Imported Technology</span></>}
-          description="World-class ZEISS, Alcon and AMO diagnostic and surgical systems — the same technology used at leading eye institutes internationally."
+          description="World-class ZEISS, Alcon and AMO diagnostic and surgical systems, the same technology used at leading eye institutes internationally."
         />
 
         <div className="mt-14">

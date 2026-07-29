@@ -9,7 +9,7 @@ import { equipmentList } from "@/lib/data/equipment";
 export const metadata: Metadata = {
   title: "Equipment",
   description:
-    "Explore Sri Geetha Eye Hospital's imported diagnostic and surgical equipment — ZEISS OCT, Alcon Constellation Vitrectomy, AMO Signature WhiteStar Phaco, and more.",
+    "Explore Sri Geetha Eye Hospital's imported diagnostic and surgical equipment: ZEISS OCT, Alcon Constellation Vitrectomy, AMO Signature WhiteStar Phaco, and more.",
   alternates: { canonical: "/equipment" },
 };
 
@@ -20,7 +20,7 @@ export default function EquipmentPage() {
       <PageHero
         eyebrow="Advanced Technology"
         title={<>Premium <span className="text-gradient">Imported Equipment</span></>}
-        description="The same world-class ZEISS, Alcon and AMO diagnostic and surgical technology used at leading international eye institutes — available right here in Guntur."
+        description="The same world-class ZEISS, Alcon and AMO diagnostic and surgical technology used at leading international eye institutes, available right here in Guntur."
         breadcrumb={[{ label: "Home", href: "/" }, { label: "Equipment" }]}
       />
       <section className="section-screen relative pb-24 sm:pb-32">

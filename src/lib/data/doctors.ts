@@ -70,13 +70,15 @@ export const doctors: Doctor[] = [
       "Anterior Segment",
       "LASIK",
       "Refractive Surgery",
+      "Keratoconus",
+      "Pterygium Surgery",
     ],
     experienceYears: 10,
     education: [
       { degree: "MS (Ophthalmology)", institute: "NRI Medical College" },
       { degree: "Fellowship in Cornea & Refractive Surgery (FCRS)", institute: "Aravind Eye Hospital" },
     ],
-    treatments: ["cataract-surgery", "lasik-surgery", "cornea"],
+    treatments: ["cataract-surgery", "lasik-surgery", "cornea", "keratoconus", "pterygium-surgery"],
   },
 ];
 

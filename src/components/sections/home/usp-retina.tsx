@@ -27,8 +27,8 @@ export function UspRetina() {
             <Reveal delay={0.2}>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-teal-100/85">
                 When your eye problem is serious, general eye care is not enough. Our
-                dedicated Vitreo Retinal unit — led by a fellowship-trained retina
-                surgeon and equipped with imported Alcon and ZEISS surgical systems —
+                dedicated Vitreo Retinal unit, led by a fellowship-trained retina
+                surgeon and equipped with imported Alcon and ZEISS surgical systems,
                 is where the region&apos;s most complex retinal cases are treated and
                 sight is restored.
               </p>

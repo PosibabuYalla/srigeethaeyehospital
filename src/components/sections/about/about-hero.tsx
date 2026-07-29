@@ -80,9 +80,9 @@ export function AboutHero() {
 
             <Reveal delay={0.24}>
               <p className="mt-6 text-lg leading-relaxed text-slate">
-                Since {site.founded}, {site.name} has grown from a single mission —
+                Since {site.founded}, {site.name} has grown from a single mission,
                 bringing quality eye care within reach of every family in{" "}
-                {site.city} — into the region&apos;s only dedicated Vitreo Retinal
+                {site.city}, into the region&apos;s only dedicated Vitreo Retinal
                 Surgery centre, trusted by over 50,000 patients.
               </p>
             </Reveal>

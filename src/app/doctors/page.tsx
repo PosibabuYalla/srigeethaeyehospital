@@ -9,7 +9,7 @@ import { doctors } from "@/lib/data/doctors";
 export const metadata: Metadata = {
   title: "Our Doctors",
   description:
-    "Meet the expert ophthalmologists and surgeons at Sri Geetha Eye Hospital, Guntur — trained at Aravind Eye Hospital and leading institutes across India.",
+    "Meet the expert ophthalmologists and surgeons at Sri Geetha Eye Hospital, Guntur, trained at Aravind Eye Hospital and leading institutes across India.",
   alternates: { canonical: "/doctors" },
 };
 

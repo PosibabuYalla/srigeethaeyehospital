@@ -10,7 +10,7 @@ export function Timeline() {
         <SectionHeading
           eyebrow="Our Journey"
           title={<>40 Years of <span className="text-gradient">Advancing Eye Care</span></>}
-          description="From a single clinic in Guntur to the region's most advanced eye hospital — a journey shaped by continuous investment in technology and expertise."
+          description="From a single clinic in Guntur to the region's most advanced eye hospital, a journey shaped by continuous investment in technology and expertise."
         />
 
         <RevealGroup className="relative mt-16">

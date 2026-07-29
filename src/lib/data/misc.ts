@@ -8,7 +8,7 @@ export const milestones = [
 ];
 
 export const infrastructureHighlights = [
-  { icon: "trophy", title: "Pioneering Technology", description: "One of the first hospitals in the region to introduce the Phacoemulsification System, Vitreo-Retinal Surgical System, and Constellation System — among the earliest centres in the combined Guntur district to adopt these technologies." },
+  { icon: "trophy", title: "Pioneering Technology", description: "One of the first hospitals in the region to introduce the Phacoemulsification System, Vitreo-Retinal Surgical System, and Constellation System, among the earliest centres in the combined Guntur district to adopt these technologies." },
   { icon: "building-2", title: "Modular Operation Theatre", description: "Laminar-flow, infection-controlled OT built to international surgical standards." },
   { icon: "scan-line", title: "Advanced Diagnostic Suite", description: "Dedicated imaging floor housing OCT, fundus and field-analysis systems." },
   { icon: "microscope", title: "Retina Surgical Wing", description: "Purpose-built for micro-incision vitrectomy and complex retinal procedures." },
@@ -29,7 +29,7 @@ export const missionVision = [
   {
     icon: "heart-handshake",
     title: "Patient-First Philosophy",
-    description: "Every protocol, every consultation, and every surgical decision is made with one priority — the best possible outcome for the patient in front of us.",
+    description: "Every protocol, every consultation, and every surgical decision is made with one priority: the best possible outcome for the patient in front of us.",
   },
 ];
 

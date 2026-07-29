@@ -64,7 +64,7 @@ export function ContactForm() {
             className="mb-6 flex items-center gap-3 rounded-2xl border border-brand-200 bg-brand-50 px-5 py-4 text-sm font-semibold text-brand-700"
           >
             <Icon name="check-circle" className="h-5 w-5 shrink-0" />
-            Thank you! We&apos;ve opened WhatsApp with your appointment details — just hit send to confirm your request.
+            Thank you! We&apos;ve opened WhatsApp with your appointment details. Just hit send to confirm your request.
           </motion.div>
         )}
       </AnimatePresence>

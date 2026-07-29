@@ -16,7 +16,7 @@ export function BookAppointmentDialog({ children }: { children: React.ReactNode 
       <DialogContent className="max-h-[88vh] w-[calc(100%-2rem)] max-w-2xl overflow-y-auto">
         <DialogTitle>Book Your Appointment</DialogTitle>
         <DialogDescription>
-          Fill in your details below — we&apos;ll open WhatsApp with your request ready to send.
+          Fill in your details below and we&apos;ll open WhatsApp with your request ready to send.
         </DialogDescription>
         <div className="mt-6">
           <ContactForm />
