@@ -113,6 +113,20 @@ export function Footer() {
             Care team: {doctors.map((d) => d.name).join(" · ")}
           </p>
         </div>
+
+        <div className="mt-4 text-center text-xs text-teal-100/60">
+          <p>
+            Website Design and Developed by{" "}
+            <a
+              href="https://www.sabariyatech.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-teal-100 transition-colors hover:text-white"
+            >
+              SabariyaTech
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );

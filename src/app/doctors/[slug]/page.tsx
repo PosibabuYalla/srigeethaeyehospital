@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/container";
 import { GlassCard } from "@/components/ui/glass-card";
@@ -33,10 +34,6 @@ export async function generateMetadata({
   };
 }
 
-function initials(name: string) {
-  return name.replace("Dr.", "").trim().split(" ").map((p) => p[0]).filter((c) => /[A-Z]/.test(c)).slice(0, 2).join("");
-}
-
 export default async function DoctorDetailPage({
   params,
 }: {
@@ -67,8 +64,14 @@ export default async function DoctorDetailPage({
           <Reveal>
             <div className="glass-card relative flex flex-col items-center overflow-hidden rounded-[2rem] p-10 text-center">
               <div className="absolute inset-0 bg-mesh opacity-40" />
-              <span className="relative flex h-40 w-40 items-center justify-center rounded-full bg-gradient-to-br from-brand-600 to-brand-500 font-heading text-5xl font-extrabold text-white shadow-xl shadow-brand-500/30">
-                {initials(doctor.name)}
+              <span className="relative h-40 w-40 overflow-hidden rounded-full bg-gradient-to-br from-brand-100 to-teal-50 shadow-xl shadow-brand-500/20">
+                <Image
+                  src={doctor.image}
+                  alt={doctor.name}
+                  fill
+                  sizes="160px"
+                  className="object-cover object-top"
+                />
               </span>
               <h1 className="relative mt-6 font-heading text-2xl font-bold text-ink">{doctor.name}</h1>
               <p className="relative mt-1 text-sm font-semibold text-brand-600">{doctor.role}</p>

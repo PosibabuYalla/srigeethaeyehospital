@@ -19,7 +19,7 @@ export const doctors: Doctor[] = [
     role: "Consultant Vitreo-Retinal Surgeon",
     credentials: ["MS (Oph)", "FVRS"],
     trainedAt: "Aravind Eye Hospital",
-    image: "/images/doctors/mohan-krishna.jpg",
+    image: "/Doctors/Dr.P.MohanKrishna.webp",
     bio: "Dr. P. Mohan Krishna is a Consultant Vitreo-Retinal Surgeon and one of the leading Vitreo-Retinal Surgeons in Guntur and the nearby districts. Trained at Aravind Eye Hospital, he is associated with leading hospitals in the region and specializes in complex retinal surgery using imported micro-incision vitrectomy systems. He has led thousands of sight-restoring retinal procedures.",
     specializations: [
       "Vitreo Retinal Surgery",
@@ -41,7 +41,7 @@ export const doctors: Doctor[] = [
     name: "Dr. P. Narasimha Rao",
     role: "Senior Ophthalmologist",
     credentials: ["MBBS", "DO (RIO Chennai)"],
-    image: "/images/doctors/narasimha-rao.jpg",
+    image: "/Doctors/Dr.P.NarasimhaRao.webp",
     bio: "With decades of experience in comprehensive eye care, Dr. P. Narasimha Rao has built the trust of thousands of families across Guntur through precise diagnosis and compassionate treatment.",
     specializations: [
       "General Ophthalmology",
@@ -62,7 +62,7 @@ export const doctors: Doctor[] = [
     role: "Anterior Segment Surgeon",
     credentials: ["MS", "FCRS"],
     trainedAt: "Aravind Eye Hospital",
-    image: "/images/doctors/prathyusha.jpg",
+    image: "/Doctors/Dr.B.Prathyusha.webp",
     bio: "Dr. B. Prathyusha specializes in cataract and corneal surgery, bringing advanced refractive techniques and micro-incision phacoemulsification trained at Aravind Eye Hospital to patients across the region.",
     specializations: [
       "Cataract Surgery",

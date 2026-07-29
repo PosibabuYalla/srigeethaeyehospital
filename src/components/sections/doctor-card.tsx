@@ -1,20 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Icon } from "@/components/ui/icon";
 import type { Doctor } from "@/lib/data/doctors";
-
-function initials(name: string) {
-  return name
-    .replace("Dr.", "")
-    .trim()
-    .split(" ")
-    .map((p) => p[0])
-    .filter((c) => /[A-Z]/.test(c))
-    .slice(0, 2)
-    .join("");
-}
 
 export function DoctorCard({ doctor, index = 0 }: { doctor: Doctor; index?: number }) {
   return (
@@ -26,14 +16,15 @@ export function DoctorCard({ doctor, index = 0 }: { doctor: Doctor; index?: numb
       whileHover={{ y: -8 }}
       className="glass-card group flex h-full flex-col overflow-hidden rounded-3xl"
     >
-      <div className="relative flex h-64 items-center justify-center overflow-hidden bg-gradient-to-br from-brand-100 via-teal-50 to-white">
+      <div className="relative h-64 overflow-hidden bg-gradient-to-br from-brand-100 via-teal-50 to-white">
         <div className="absolute inset-0 bg-mesh opacity-60" />
-        <motion.span
-          whileHover={{ scale: 1.06 }}
-          className="relative flex h-32 w-32 items-center justify-center rounded-full bg-gradient-to-br from-brand-600 to-brand-500 font-heading text-3xl font-extrabold text-white shadow-xl shadow-brand-500/30"
-        >
-          {initials(doctor.name)}
-        </motion.span>
+        <Image
+          src={doctor.image}
+          alt={doctor.name}
+          fill
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+          className="object-contain object-bottom transition-transform duration-500 ease-out group-hover:scale-[1.04]"
+        />
         <span className="absolute bottom-4 right-4 flex h-9 w-9 items-center justify-center rounded-full bg-white text-brand-600 shadow-md">
           <Icon name="badge-check" className="h-4 w-4" />
         </span>
