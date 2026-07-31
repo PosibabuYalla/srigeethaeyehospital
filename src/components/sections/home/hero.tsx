@@ -100,27 +100,14 @@ export function Hero() {
               className="mt-6 h-px w-28 bg-ink/15"
             />
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.25 }}
-              className="mt-6"
-            >
-              <p className="text-lg text-slate">Advanced Eye Care with a Focus on</p>
-              <p className="font-heading text-xl font-extrabold uppercase tracking-wide sm:text-2xl">
-                <span className="text-brand-600">Vitreo</span>{" "}
-                <span className="text-accent-400">Retinal Surgeries</span>
-              </p>
-            </motion.div>
-
             <motion.p
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="mt-5 max-w-xl text-base leading-relaxed text-slate"
+              className="mt-6 max-w-xl text-base leading-relaxed text-slate"
             >
-              From complex retinal treatments to everyday eye care, we bring clarity
-              to your vision with compassion and expertise.
+              From complex eye (not just retinal) treatments to everyday eye care, we
+              bring clarity to your vision with compassion and expertise.
             </motion.p>
 
             <motion.div

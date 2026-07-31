@@ -44,9 +44,9 @@ export const trustStats = [
 
 export const whyChooseReasons = [
   {
-    icon: "eye",
-    title: "Vitreo Retinal Surgery",
-    description: "The only dedicated Vitreo Retinal centre in the region, led by a fellowship-trained retina surgeon.",
+    icon: "sparkles",
+    title: "Cataract Surgery",
+    description: "Bladeless micro-incision phacoemulsification with premium imported IOLs for rapid visual recovery.",
   },
   {
     icon: "cpu",

@@ -25,9 +25,9 @@ export function Footer() {
               />
             </Link>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-teal-100/80">
-              {site.founded} years of advanced, compassionate eye care in {site.city}. The
-              region&apos;s only dedicated Vitreo Retinal Surgery centre, equipped with
-              imported world-class technology.
+              {site.founded} years of advanced, compassionate eye care in {site.city}. A
+              multispecialty eye hospital equipped with imported world-class technology,
+              treating every kind of eye condition.
             </p>
             <div className="mt-6 flex gap-3">
               {[

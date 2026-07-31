@@ -10,6 +10,7 @@ const spotlightSlugs = [
   "zeiss-cirrus-oct",
   "alcon-centurion-phaco",
   "amo-signature-whitestar",
+  "sirius-corneal-topography",
 ];
 
 const spotlight = spotlightSlugs
