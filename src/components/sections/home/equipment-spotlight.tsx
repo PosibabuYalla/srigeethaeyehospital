@@ -11,6 +11,7 @@ const spotlightSlugs = [
   "alcon-centurion-phaco",
   "amo-signature-whitestar",
   "sirius-corneal-topography",
+  "alcon-fundus-camera-visucam-524",
 ];
 
 const spotlight = spotlightSlugs

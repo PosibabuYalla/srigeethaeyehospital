@@ -54,18 +54,6 @@ export function Hero() {
               className="object-contain object-right-bottom"
             />
 
-            <div className="glass-strong absolute bottom-4 right-2 flex items-center gap-3 rounded-2xl px-4 py-3 shadow-glass">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent-400/15 text-accent-400">
-                <Icon name="target" className="h-5 w-5" />
-              </span>
-              <span className="text-xs leading-tight text-ink">
-                Specialized in
-                <br />
-                <span className="font-heading text-sm font-extrabold text-accent-400">
-                  Vitreo Retinal Care
-                </span>
-              </span>
-            </div>
           </div>
 
           <div className="relative z-10 max-w-2xl lg:max-w-[38%]">
@@ -106,8 +94,8 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="mt-6 max-w-xl text-base leading-relaxed text-slate"
             >
-              From complex eye (not just retinal) treatments to everyday eye care, we
-              bring clarity to your vision with compassion and expertise.
+              A multispecialty eye hospital for every eye condition, from routine
+              checkups to complex surgery, delivered with compassion and expertise.
             </motion.p>
 
             <motion.div
@@ -147,18 +135,6 @@ export function Hero() {
               sizes="(min-width: 640px) 28rem, 90vw"
               className="object-contain"
             />
-          </div>
-          <div className="glass-strong absolute bottom-1 right-1 flex items-center gap-2 rounded-2xl px-3 py-2 shadow-glass sm:bottom-2 sm:right-2">
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent-400/15 text-accent-400">
-              <Icon name="target" className="h-4 w-4" />
-            </span>
-            <span className="text-[11px] leading-tight text-ink">
-              Specialized in
-              <br />
-              <span className="font-heading text-xs font-extrabold text-accent-400">
-                Vitreo Retinal Care
-              </span>
-            </span>
           </div>
         </motion.div>
 

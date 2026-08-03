@@ -14,6 +14,26 @@ export type Doctor = {
 
 export const doctors: Doctor[] = [
   {
+    slug: "dr-p-narasimha-rao",
+    name: "Dr. P. Narasimha Rao",
+    role: "Senior Ophthalmologist",
+    credentials: ["MBBS", "DO (RIO Chennai)"],
+    image: "/Doctors/Dr.P.NarasimhaRao.webp",
+    bio: "With decades of experience in comprehensive eye care, Dr. P. Narasimha Rao has built the trust of thousands of families across Guntur through precise diagnosis and compassionate treatment.",
+    specializations: [
+      "General Ophthalmology",
+      "Comprehensive Eye Care",
+      "Cataract Evaluation",
+      "Routine Eye Checkups",
+    ],
+    experienceYears: 35,
+    education: [
+      { degree: "MBBS", institute: "Guntur Medical College" },
+      { degree: "Diploma in Ophthalmology (DO)", institute: "Regional Institute of Ophthalmology, Chennai" },
+    ],
+    treatments: ["cataract-surgery", "pediatric-ophthalmology", "cornea", "glaucoma"],
+  },
+  {
     slug: "dr-p-mohan-krishna",
     name: "Dr. P. Mohan Krishna",
     role: "Consultant Vitreo-Retinal Surgeon",
@@ -37,29 +57,9 @@ export const doctors: Doctor[] = [
     treatments: ["vitreo-retinal-surgery", "diabetic-eye-disease", "retinal-detachment", "macular-degeneration", "macular-hole-surgery", "scleral-fixation", "intravitreal-injection"],
   },
   {
-    slug: "dr-p-narasimha-rao",
-    name: "Dr. P. Narasimha Rao",
-    role: "Senior Ophthalmologist",
-    credentials: ["MBBS", "DO (RIO Chennai)"],
-    image: "/Doctors/Dr.P.NarasimhaRao.webp",
-    bio: "With decades of experience in comprehensive eye care, Dr. P. Narasimha Rao has built the trust of thousands of families across Guntur through precise diagnosis and compassionate treatment.",
-    specializations: [
-      "General Ophthalmology",
-      "Comprehensive Eye Care",
-      "Cataract Evaluation",
-      "Routine Eye Checkups",
-    ],
-    experienceYears: 35,
-    education: [
-      { degree: "MBBS", institute: "Guntur Medical College" },
-      { degree: "Diploma in Ophthalmology (DO)", institute: "Regional Institute of Ophthalmology, Chennai" },
-    ],
-    treatments: ["cataract-surgery", "pediatric-ophthalmology", "cornea", "glaucoma"],
-  },
-  {
     slug: "dr-b-prathyusha",
     name: "Dr. B. Prathyusha",
-    role: "Anterior Segment Surgeon",
+    role: "Phaco Refractive Surgeon",
     credentials: ["MS", "FCRS"],
     trainedAt: "Aravind Eye Hospital",
     image: "/Doctors/Dr.B.Prathyusha.webp",
@@ -67,7 +67,6 @@ export const doctors: Doctor[] = [
     specializations: [
       "Cataract Surgery",
       "Cornea",
-      "Anterior Segment",
       "LASIK",
       "Refractive Surgery",
       "Keratoconus",
@@ -75,8 +74,10 @@ export const doctors: Doctor[] = [
     ],
     experienceYears: 10,
     education: [
-      { degree: "MS (Ophthalmology)", institute: "NRI Medical College" },
+      { degree: "MS (Ophthalmology) — Gold Medalist", institute: "NRI Medical College" },
       { degree: "Fellowship in Cornea & Refractive Surgery (FCRS)", institute: "Aravind Eye Hospital" },
+      { degree: "Phacoemulsification Fellowship", institute: "Nethradhama Super Speciality Eye Hospital" },
+      { degree: "Intensive LASIK Course", institute: "Center for Sight" },
     ],
     treatments: ["cataract-surgery", "lasik-surgery", "cornea", "keratoconus", "pterygium-surgery"],
   },

@@ -89,6 +89,17 @@ export const equipmentList: Equipment[] = [
     imported: true,
   },
   {
+    slug: "alcon-fundus-camera-visucam-524",
+    name: "Alcon Fundus Camera - Visucam 524",
+    brand: "Alcon, USA",
+    category: "Retina Diagnostics",
+    image: "/equipment/alcon-fundus-camera-visucam-524.webp",
+    purpose: "High-resolution non-mydriatic fundus photography for documenting and monitoring retinal and optic nerve disease.",
+    specifications: ["45° field of view", "Non-mydriatic capture", "Color, red-free & autofluorescence imaging"],
+    benefits: ["Detailed retinal documentation", "Tracks disease progression over time", "Quick, patient-friendly imaging"],
+    imported: true,
+  },
+  {
     slug: "alcon-constellation-vitrectomy",
     name: "Alcon Constellation Vitrectomy System",
     brand: "Alcon, USA",

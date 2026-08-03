@@ -12,7 +12,7 @@ import { BookAppointmentDialog } from "@/components/sections/contact/book-appoin
 import { site } from "@/lib/data/site";
 
 const credentials = [
-  { icon: "eye", label: "Dedicated Vitreo Retinal Centre" },
+  { icon: "eye", label: "Multispeciality Eye Hospital" },
   { icon: "cpu", label: "ZEISS · Alcon · AMO Technology" },
   { icon: "graduation-cap", label: "Aravind-Trained Specialists" },
 ];
@@ -82,8 +82,8 @@ export function AboutHero() {
               <p className="mt-6 text-lg leading-relaxed text-slate">
                 Since {site.founded}, {site.name} has grown from a single mission,
                 bringing quality eye care within reach of every family in{" "}
-                {site.city}, into the region&apos;s only dedicated Vitreo Retinal
-                Surgery centre, trusted by over 50,000 patients.
+                {site.city}, into one of the very few multispeciality eye hospitals
+                in the {site.city} region, trusted by over 50,000 patients.
               </p>
             </Reveal>
 
