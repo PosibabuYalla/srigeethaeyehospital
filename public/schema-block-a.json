@@ -1,0 +1,111 @@
+{
+  "@context": "https://schema.org",
+  "@type": ["Hospital", "MedicalBusiness"],
+  "@id": "https://www.srigeethaeyehospital.com/#hospital",
+  "name": "Sri Geetha Eye Hospital",
+  "alternateName": [
+    "Srigeetha Eye Hospital",
+    "Sri Geetha Eye Hospitals",
+    "Sri Geetha Hospital Guntur",
+    "Sri Geetha Eye Hospital Guntur"
+  ],
+  "description": "Sri Geetha Eye Hospital is Guntur's only dedicated Vitreo Retinal Surgery centre, offering advanced cataract, LASIK, diabetic eye, and retinal surgeries using imported ZEISS, Alcon, and AMO equipment. Trusted by families across Andhra Pradesh since 1983.",
+  "foundingDate": "1983",
+  "url": "https://www.srigeethaeyehospital.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.srigeethaeyehospital.com/Logo.png",
+    "width": 400,
+    "height": 100
+  },
+  "image": "https://www.srigeethaeyehospital.com/images/og-image.jpg",
+  "telephone": "+918500922266",
+  "email": "info@srigeethaeyehospital.com",
+  "priceRange": "$$",
+  "currenciesAccepted": "INR",
+  "paymentAccepted": "Cash, Credit Card, Debit Card, Health Insurance, ESI Card, Bajaj Finserv Health Card, Zurich Kotak Insurance, Best Care Health Card",
+  "medicalSpecialty": [
+    "Ophthalmology",
+    "Vitreo-Retinal Surgery",
+    "Cataract Surgery",
+    "Refractive Surgery",
+    "Cornea and External Disease",
+    "Glaucoma",
+    "Pediatric Ophthalmology"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Laxmipuram, 4th Lane, Behind Harihara Cinemas, Opp. Indian Bank",
+    "addressLocality": "Guntur",
+    "addressRegion": "Andhra Pradesh",
+    "postalCode": "522007",
+    "addressCountry": "IN"
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Sri+Geetha+Eye+Hospital+Laxmipuram+4th+Lane+Behind+Harihara+Cinemas+Opp+Indian+Bank+Guntur+Andhra+Pradesh+522007",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "09:00",
+      "closes": "13:00"
+    }
+  ],
+  "availableService": [
+    {
+      "@type": "MedicalProcedure",
+      "name": "Vitreo Retinal Surgery",
+      "url": "https://www.srigeethaeyehospital.com/treatments/vitreo-retinal-surgery",
+      "description": "Advanced micro-incision surgery for complex retinal conditions using imported Alcon Constellation vitrectomy systems."
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Cataract Surgery",
+      "url": "https://www.srigeethaeyehospital.com/treatments/cataract-surgery",
+      "description": "Bladeless micro-incision phacoemulsification with premium imported IOLs (trifocal, toric, monofocal)."
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "LASIK Surgery",
+      "url": "https://www.srigeethaeyehospital.com/treatments/lasik-surgery",
+      "description": "Blade-free vision correction to permanently reduce dependency on glasses and contact lenses."
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Diabetic Eye Disease Treatment",
+      "url": "https://www.srigeethaeyehospital.com/treatments/diabetic-eye-disease",
+      "description": "Comprehensive screening, laser, and surgical management of diabetic retinopathy."
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Retinal Detachment Surgery",
+      "url": "https://www.srigeethaeyehospital.com/treatments/retinal-detachment",
+      "description": "Emergency-ready surgical repair to restore and preserve vision from retinal detachment."
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Macular Hole Surgery",
+      "url": "https://www.srigeethaeyehospital.com/treatments/macular-hole-surgery",
+      "description": "Precision micro-incision vitrectomy to close macular holes and restore central vision."
+    }
+  ],
+  "sameAs": [
+    "https://www.srigeethaeyehospitals.com",
+    "https://www.guntureyehospital.com",
+    "https://www.justdial.com",
+    "https://www.practo.com",
+    "https://www.magicpin.in",
+    "https://www.5bestincity.com",
+    "https://www.bajajfinservhealth.in",
+    "https://www.esi.in",
+    "https://www.zurichkotak.com",
+    "https://www.bestcarehealthcard.com",
+    "https://www.facebook.com/srigeethaeyehospitals/",
+    "https://www.instagram.com/srigeethaeyehospitalofficial/"
+  ]
+}

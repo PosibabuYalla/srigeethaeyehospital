@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  SITEMAP: srigeethaeyehospitals.com  (PLURAL / ALIAS DOMAIN)
+  Generated: 2026-08-15
+
+  STRATEGIC NOTE - WHY THIS SITEMAP IS MINIMAL:
+  The plural domain "srigeethaeyehospitals.com" is an ALIAS of
+  the canonical domain "www.srigeethaeyehospital.com".
+
+  Google's cross-domain deduplication policy means that if both
+  domains serve IDENTICAL content AND BOTH submit full sitemaps,
+  Google will choose one as canonical - and may choose the WRONG
+  one, diluting authority from the intended canonical.
+
+  RECOMMENDED STRATEGY:
+    1. Configure the server to 301-redirect ALL paths on
+       srigeethaeyehospitals.com to https://www.srigeethaeyehospital.com
+    2. Submit THIS minimal sitemap to GSC for this property so
+       Google understands the domain exists but defers to the canonical.
+    3. Do NOT host a duplicate full sitemap here - this causes
+       keyword cannibalization and splits link equity.
+
+  RULES:
+    All loc values MUST begin with https://srigeethaeyehospitals.com
+    ZERO URLs from srigeethaeyehospital.com or guntureyehospital.com
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+          http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Root URL only. Server-level 301 handles all other paths. -->
+  <url>
+    <loc>https://srigeethaeyehospitals.com/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+</urlset>

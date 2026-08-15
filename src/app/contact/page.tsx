@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { PageHero } from "@/components/sections/page-hero";
 import { Container } from "@/components/ui/container";
 import { GlassCard } from "@/components/ui/glass-card";
@@ -8,12 +9,20 @@ import { ContactForm } from "@/components/sections/contact/contact-form";
 import { BreadcrumbSchema } from "@/components/seo/schema";
 import { site } from "@/lib/data/site";
 
-export const metadata: Metadata = {
-  title: "Contact Us",
-  description:
-    "Book an appointment at Sri Geetha Eye Hospital, Guntur. Find our address, phone number, working hours, and emergency contact details.",
-  alternates: { canonical: "/contact" },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get("host") ?? "";
+  const isGeoDomain = host.includes("guntureyehospital.com");
+
+  return {
+    title: "Contact Us",
+    description: isGeoDomain
+      ? "Book an appointment at Guntur Eye Hospital. Find our address, phone number, working hours, and emergency contact details."
+      : "Book an appointment at Sri Geetha Eye Hospital, Guntur. Find our address, phone number, working hours, and emergency contact details.",
+    alternates: { canonical: "/contact" },
+  };
+}
+
 
 const infoCards = [
   {

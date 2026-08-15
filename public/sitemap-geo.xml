@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  SITEMAP: www.guntureyehospital.com  (GEO-TARGETED DOMAIN)
+  Generated: 2026-08-15
+
+  STRATEGIC NOTE - GEO-TARGETED INDEPENDENT PROPERTY:
+  This domain is an INDEPENDENT geo-targeted property focused on
+  the keyword cluster "eye hospital in Guntur" and related local
+  searches. It must NOT compete with the main brand domain on
+  brand keywords - instead it targets location + condition queries.
+
+  CONTENT DIFFERENTIATION STRATEGY:
+    Pages must have UNIQUE content (not mirrors of srigeetha...)
+    Focus on location-specific landing pages.
+    Use LocalBusiness schema with Guntur-specific NAP data.
+    Internal linking from this domain to main domain is allowed.
+
+  RULES:
+    All loc values MUST begin with https://www.guntureyehospital.com
+    ZERO URLs from srigeethaeyehospital.com or srigeethaeyehospitals.com
+    Every page MUST have a self-referencing canonical tag
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+          http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- GEO HOME PAGE -->
+  <url>
+    <loc>https://www.guntureyehospital.com/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- LOCATION-SPECIFIC LANDING PAGES -->
+
+  <!-- Target: "eye hospital in Guntur", "eye clinic Guntur" -->
+  <url>
+    <loc>https://www.guntureyehospital.com/eye-hospital-guntur</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Target: "retina specialist Guntur", "vitreo retinal surgeon Guntur" -->
+  <url>
+    <loc>https://www.guntureyehospital.com/retina-specialist-guntur</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Target: "cataract surgery Guntur", "cataract operation Guntur" -->
+  <url>
+    <loc>https://www.guntureyehospital.com/cataract-surgery-guntur</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Target: "LASIK surgery Guntur", "specs removal Guntur" -->
+  <url>
+    <loc>https://www.guntureyehospital.com/lasik-surgery-guntur</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Target: "diabetic eye disease Guntur", "diabetic retinopathy Guntur" -->
+  <url>
+    <loc>https://www.guntureyehospital.com/diabetic-eye-treatment-guntur</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Target: "glaucoma treatment Guntur", "eye pressure treatment Guntur" -->
+  <url>
+    <loc>https://www.guntureyehospital.com/glaucoma-treatment-guntur</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Target: "child eye specialist Guntur", "squint surgery Guntur" -->
+  <url>
+    <loc>https://www.guntureyehospital.com/pediatric-eye-care-guntur</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- DOCTOR PROFILE PAGES -->
+  <url>
+    <loc>https://www.guntureyehospital.com/doctors</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Target: "best retina surgeon Guntur" -->
+  <url>
+    <loc>https://www.guntureyehospital.com/doctors/vitreo-retinal-surgeon-guntur</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Target: "ophthalmologist Guntur", "eye specialist Guntur" -->
+  <url>
+    <loc>https://www.guntureyehospital.com/doctors/ophthalmologist-guntur</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- CONTACT - Target: "eye hospital near me Guntur", "Laxmipuram eye hospital" -->
+  <url>
+    <loc>https://www.guntureyehospital.com/contact</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- ABOUT PAGE -->
+  <url>
+    <loc>https://www.guntureyehospital.com/about</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>

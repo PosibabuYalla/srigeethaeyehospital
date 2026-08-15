@@ -1,0 +1,67 @@
+{
+  "@context": "https://schema.org",
+  "@type": ["Hospital", "LocalBusiness"],
+  "@id": "https://www.guntureyehospital.com/#hospital",
+  "name": "Guntur Eye Hospital — Sri Geetha",
+  "alternateName": [
+    "Best Eye Hospital Guntur",
+    "Eye Hospital in Guntur",
+    "Retina Hospital Guntur",
+    "Vitreo Retinal Surgery Guntur"
+  ],
+  "description": "Guntur's premier dedicated eye hospital specializing in Vitreo Retinal Surgery, cataract, LASIK, diabetic eye disease, and glaucoma. Located in Laxmipuram, Guntur, Andhra Pradesh — serving patients from Guntur, Narasaraopet, Tenali, Mangalagiri, and Krishna districts.",
+  "url": "https://www.guntureyehospital.com",
+  "telephone": "+918500922266",
+  "email": "info@srigeethaeyehospital.com",
+  "priceRange": "$$",
+  "currenciesAccepted": "INR",
+  "medicalSpecialty": [
+    "Ophthalmology",
+    "Vitreo-Retinal Surgery",
+    "Cataract Surgery",
+    "Refractive Surgery"
+  ],
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Guntur",
+      "sameAs": "https://www.wikidata.org/wiki/Q200035"
+    },
+    {
+      "@type": "State",
+      "name": "Andhra Pradesh",
+      "sameAs": "https://www.wikidata.org/wiki/Q1159"
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Laxmipuram, 4th Lane, Behind Harihara Cinemas, Opp. Indian Bank",
+    "addressLocality": "Guntur",
+    "addressRegion": "Andhra Pradesh",
+    "postalCode": "522007",
+    "addressCountry": "IN"
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Sri+Geetha+Eye+Hospital+Laxmipuram+4th+Lane+Behind+Harihara+Cinemas+Opp+Indian+Bank+Guntur+Andhra+Pradesh+522007",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "09:00",
+      "closes": "13:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.srigeethaeyehospital.com",
+    "https://www.justdial.com",
+    "https://www.practo.com",
+    "https://www.magicpin.in",
+    "https://www.facebook.com/srigeethaeyehospitals/",
+    "https://www.instagram.com/srigeethaeyehospitalofficial/"
+  ]
+}
