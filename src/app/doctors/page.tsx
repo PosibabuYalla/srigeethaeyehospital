@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { PageHero } from "@/components/sections/page-hero";
 import { Container } from "@/components/ui/container";
 import { DoctorCard } from "@/components/sections/doctor-card";
@@ -6,12 +7,20 @@ import { CtaSection } from "@/components/sections/cta-section";
 import { BreadcrumbSchema } from "@/components/seo/schema";
 import { doctors } from "@/lib/data/doctors";
 
-export const metadata: Metadata = {
-  title: "Our Doctors",
-  description:
-    "Meet the expert ophthalmologists and surgeons at Sri Geetha Eye Hospital, Guntur, trained at Aravind Eye Hospital and leading institutes across India.",
-  alternates: { canonical: "/doctors" },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get("host") ?? "";
+  const isGeoDomain = host.includes("guntureyehospital.com");
+
+  return {
+    title: "Our Doctors",
+    description: isGeoDomain
+      ? "Meet the expert ophthalmologists and surgeons at Guntur Eye Hospital, trained at Aravind Eye Hospital and leading institutes across India."
+      : "Meet the expert ophthalmologists and surgeons at Sri Geetha Eye Hospital, Guntur, trained at Aravind Eye Hospital and leading institutes across India.",
+    alternates: { canonical: "/doctors" },
+  };
+}
+
 
 export default function DoctorsPage() {
   return (

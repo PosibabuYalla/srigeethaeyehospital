@@ -1,16 +1,25 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { PageHero } from "@/components/sections/page-hero";
 import { Container } from "@/components/ui/container";
 import { TreatmentsGrid } from "@/components/sections/treatments/treatments-grid";
 import { CtaSection } from "@/components/sections/cta-section";
 import { BreadcrumbSchema } from "@/components/seo/schema";
 
-export const metadata: Metadata = {
-  title: "Treatments",
-  description:
-    "Explore comprehensive eye care treatments at Sri Geetha Eye Hospital, from Vitreo Retinal Surgery and Cataract Surgery to LASIK, Glaucoma and Pediatric Ophthalmology.",
-  alternates: { canonical: "/treatments" },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get("host") ?? "";
+  const isGeoDomain = host.includes("guntureyehospital.com");
+
+  return {
+    title: "Treatments",
+    description: isGeoDomain
+      ? "Explore comprehensive eye care treatments at Guntur Eye Hospital, from Vitreo Retinal Surgery and Cataract Surgery to LASIK, Glaucoma and Pediatric Ophthalmology."
+      : "Explore comprehensive eye care treatments at Sri Geetha Eye Hospital, from Vitreo Retinal Surgery and Cataract Surgery to LASIK, Glaucoma and Pediatric Ophthalmology.",
+    alternates: { canonical: "/treatments" },
+  };
+}
+
 
 export default function TreatmentsPage() {
   return (

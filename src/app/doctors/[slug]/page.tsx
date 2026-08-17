@@ -19,6 +19,8 @@ export function generateStaticParams() {
   return doctors.map((d) => ({ slug: d.slug }));
 }
 
+import { headers } from "next/headers";
+
 export async function generateMetadata({
   params,
 }: {
@@ -27,12 +29,25 @@ export async function generateMetadata({
   const { slug } = await params;
   const doctor = getDoctor(slug);
   if (!doctor) return {};
+
+  const headersList = await headers();
+  const host = headersList.get("host") ?? "";
+  const isGeoDomain = host.includes("guntureyehospital.com");
+  const domainUrl = isGeoDomain ? site.urlGeo : site.url;
+
   return {
+    metadataBase: new URL(domainUrl),
     title: doctor.name,
     description: doctor.bio,
     alternates: { canonical: `/doctors/${doctor.slug}` },
+    openGraph: {
+      title: doctor.name,
+      description: doctor.bio,
+      url: `${domainUrl}/doctors/${doctor.slug}`,
+    },
   };
 }
+
 
 export default async function DoctorDetailPage({
   params,
